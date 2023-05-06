@@ -59,6 +59,22 @@
       "name": "Tom Brown",
       "email": "tombrown@example.com",
       "age": 30
+    },
+    {
+      "name": "jola",
+      "email": "jola@examples.com",
+      "id": 11
+    },
+    {
+      "name": "dolapo",
+      "email": "dola@examples.com",
+      "id": 12
+    },
+    {
+      "name": "Niyass",
+      "email": "niyass@example.com",
+      "age": "2",
+      "id": 13
     }
   ]
 }

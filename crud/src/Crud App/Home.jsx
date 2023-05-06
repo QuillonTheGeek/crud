@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [data, setData] = useState([]);
@@ -13,7 +14,12 @@ function Home() {
 
   return (
     <div className="container mt-5">
-      <h2></h2>
+      <h2 className="my-3">Crud App with JSON Server</h2>
+      <div>
+        <Link to="/create" className="btn btn-success">
+          Create New Data+
+        </Link>
+      </div>
       <table className="table">
         <thead>
           <tr>
@@ -31,7 +37,12 @@ function Home() {
               <td>{d.email}</td>
               <td>{d.age}</td>
               <td>
-                <button className="btn btn-sm btn-success mx-2 ">Update</button>
+                <Link
+                  to={`/update/${d.id}`}
+                  className="btn btn-sm btn-success mx-2 "
+                >
+                  Update
+                </Link>
                 <button className="btn btn-sm btn-danger">Delete</button>
               </td>
             </tr>
